@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Unity" Version="5.11.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TouristCore\TouristCore.csproj" />
+    <ProjectReference Include="..\TouristDataAccess\TouristDataAccess.csproj" />
+    <ProjectReference Include="..\TouristModel\TouristModel.csproj" />
+  </ItemGroup>
+
+</Project>

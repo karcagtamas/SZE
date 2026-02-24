@@ -1,0 +1,8 @@
+﻿@model System.DateTime
+
+@Html.DropDownListFor(model => model.Day, Enumerable.Range(1, 31)
+    .Select(i => new SelectListItem { Value = i.ToString(), Text = i.ToString() }), "Day")
+@Html.DropDownListFor(model => model.Month, Enumerable.Range(1, 12)
+    .Select(i => new SelectListItem { Value = i.ToString(), Text = i.ToString() }), "Month")
+@Html.DropDownListFor(model => model.Year, Enumerable.Range(1900, 115)
+    .Select(i => new SelectListItem { Value = i.ToString(), Text = i.ToString() }), "Year")

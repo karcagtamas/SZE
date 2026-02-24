@@ -1,0 +1,31 @@
+﻿@model WebApplication2.Models.Student
+
+@{
+    ViewData["Title"] = "Student Details";
+}
+<h1>@ViewData["Title"]</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Property</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tr>
+        <td>Id: </td>
+        <td>@Model.Id</td>
+    </tr>
+    <tr>
+        <td>Name: </td>
+        <td>@Model.Name</td>
+    </tr>
+    <tr>
+        <td>Age: </td>
+        <td>@Model.Age</td>
+    </tr>
+    <tr>
+        <td>Birth Date: </td>
+        <td>@Model.BirthDate.ToShortDateString()</td>
+    </tr>
+</table>
