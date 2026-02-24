@@ -1,0 +1,8 @@
+data;
+set Workers:= 1 2 3;
+set Works:= A B C;
+
+set Map:= (A, 1) (A, 2) (A, 3) (B, 1) (B, 2) (B, 3) (C, 1) (C, 2) (C, 3);
+
+param MapCost:= [A, 1] 2 [A, 2] 4 [A, 3] 3 [B, 1] 10 [B, 2] 5 [B, 3] 6 [C, 1] 4 [C, 2] 2 [C, 3] 1;
+end;

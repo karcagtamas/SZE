@@ -1,0 +1,15 @@
+set Workers;
+set Works;
+
+set Map dimen 2;
+
+param MapCost{(i, j) in Map};
+
+var x{(i, j) in Map} binary;
+
+s.t. row{i in Works}: sum{j in Workers} x[i, j] = 1;  
+s.t. col{j in Workers}: sum{i in Works} x[i, j] = 1;
+
+minimize cost: sum{(i, j) in Map} MapCost[i, j] * x[i, j];
+
+end;

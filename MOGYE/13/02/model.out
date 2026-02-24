@@ -1,0 +1,40 @@
+Problem:    model
+Rows:       5
+Columns:    2
+Non-zeros:  8
+Status:     OPTIMAL
+Objective:  darab = 65 (MAXimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 pMax[vaj]    NU           220                         220      0.166667 
+     2 pMax[tojas]  NU           170                         170      0.166667 
+     3 pMax[szalami]
+                    B             80                         100 
+     4 pMax[sonka]  B             25                          40 
+     5 darab        B             65                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 x[szalamis]  B             40                             
+     2 x[sonkas]    B             25                             
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 1.11e-16 on column 1
+        max.rel.err = 3.70e-17 on column 1
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

@@ -1,0 +1,20 @@
+data;
+
+set Foods:= porkolt csulok bab rudi;
+set Types:= feherje szenhidrat zsir;
+
+param Cost:= porkolt 500
+            csulok 1500
+            bab 400
+            rudi 90;
+
+param Quantity: porkolt csulok bab rudi:=
+        feherje 50 100 30 10
+        szenhidrat 100 10 90 100
+        zsir 5 10 6 30;
+
+param MaxType:= feherje 120
+                szenhidrat 2000
+                zsir 50;
+
+end;

@@ -1,0 +1,19 @@
+var x1 >= 0 integer;
+var x2 >= 0 integer;
+var x3 >= 0 integer;
+var x4 >= 0 integer;
+
+s.t. osszeg: 516 * x1 + 42 * x2 + 33 * x3 + 2 * x4 = 6273;
+
+minimize darab: x1 + x2 + x3 + x4;
+
+solve;
+
+printf "Hello World\n";
+printf "Eredmeny: %d\n", darab;
+printf "X1: %d\n", x1;
+printf "X2: %d\n", x2;
+printf "X3: %d\n", x3;
+printf "X4: %d\n", x4;
+
+end;

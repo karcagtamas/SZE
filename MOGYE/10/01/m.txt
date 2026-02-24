@@ -1,0 +1,7 @@
+var lekvar >= 0 integer;
+var befott >= 0 integer;
+
+s.t. gyumi: 0.8 * lekvar + 0.4 * befott <= 120;
+s.t. cukor: 0.4 * lekvar + 0.4 * befott <= 80;
+
+maximize koltseg: 100 * lekvar + 80 * befott;

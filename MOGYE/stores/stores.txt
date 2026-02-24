@@ -1,0 +1,18 @@
+var xAD >= 0;
+var xAE >= 0;
+var xBD >= 0;
+var xBF >= 0;
+var xCD >= 0;
+var xCF >= 0;
+var xDE >= 0;
+var xDF >= 0;
+
+s.t. rA: xAD + xAE = 100;
+s.t. rB: xBD + xBF = 150;
+s.t. rC: xCD + xCF = 200;
+s.t. rD: xAD + xBD + xCD - 50 = xDE + xDF;
+s.t. rE: xAE + xDE = 150;
+s.t. rF: xDF + xBF + xCF = 250;
+
+minimize koltseg: 5 * xAD + 3 * xAE + 2 * xBD + 2 * xBF + 10 * xCD + 4 * xCF + 3 * xDE + 4 * xDF;
+end;

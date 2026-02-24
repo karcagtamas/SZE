@@ -1,0 +1,65 @@
+Problem:    transport
+Rows:       8
+Columns:    12
+Non-zeros:  36
+Status:     OPTIMAL
+Objective:  pathcost = 9100 (MINimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 fo[Budapest] NS          1000          1000             =             5 
+     2 fo[Veszprem] NS           500           500             =             3 
+     3 fo[Gyor]     NS           600           600             =         < eps
+     4 fo[Szekesfehervar]
+                    NS           400           400             =             1 
+     5 ti[Komarom]  NS          1100          1100             =             2 
+     6 ti[Szeged]   NS           700           700             =         < eps
+     7 ti[Debrecen] B            700           700             = 
+     8 pathcost     B           9100                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 x[Budapest,Komarom]
+                    NL             0             0                           5 
+     2 x[Budapest,Szeged]
+                    B            700             0               
+     3 x[Budapest,Debrecen]
+                    B            300             0               
+     4 x[Veszprem,Komarom]
+                    B            100             0               
+     5 x[Veszprem,Szeged]
+                    NL             0             0                           1 
+     6 x[Veszprem,Debrecen]
+                    B            400             0               
+     7 x[Gyor,Komarom]
+                    B            600             0               
+     8 x[Gyor,Szeged]
+                    NL             0             0                          10 
+     9 x[Gyor,Debrecen]
+                    NL             0             0                          12 
+    10 x[Szekesfehervar,Komarom]
+                    B            400             0               
+    11 x[Szekesfehervar,Szeged]
+                    NL             0             0                           5 
+    12 x[Szekesfehervar,Debrecen]
+                    NL             0             0                           6 
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+00 on column 0
+        max.rel.err = 0.00e+00 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

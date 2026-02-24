@@ -1,0 +1,42 @@
+Problem:    dietp
+Rows:       4
+Columns:    4
+Non-zeros:  16
+Status:     OPTIMAL
+Objective:  cost = 1800 (MINimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 type[feherje]
+                    B            200           120               
+     2 type[szenhidrat]
+                    NL          2000          2000                         0.9 
+     3 type[zsir]   B            600            50               
+     4 cost         B           1800                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 x[porkolt]   NL             0             0                         410 
+     2 x[csulok]    NL             0             0                        1491 
+     3 x[bab]       NL             0             0                         319 
+     4 x[rudi]      B             20             0               
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 2.50e-12 on row 2
+        max.rel.err = 6.25e-16 on row 2
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 1.14e-13 on column 4
+        max.rel.err = 6.54e-16 on column 2
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

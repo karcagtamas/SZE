@@ -1,0 +1,40 @@
+Problem:    model
+Rows:       4
+Columns:    4
+Non-zeros:  15
+Status:     OPTIMAL
+Objective:  ered = 18 (MAXimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 st1          NU            30                          30            12 
+     2 st2          NS            10            10             =           -31 
+     3 st3          NL             4             4                          -8 
+     4 ered         B             18                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 x1           B              2             0               
+     2 x2           B              4             0               
+     3 x3           NL             0             0                          -2 
+     4 x4           B              2             0               
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 3.55e-15 on row 1
+        max.rel.err = 1.37e-16 on row 3
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+00 on column 0
+        max.rel.err = 0.00e+00 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

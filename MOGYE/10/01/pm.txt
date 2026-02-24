@@ -1,0 +1,14 @@
+set Products;
+set ProductParts;
+
+param Cost{p in Products};
+param MaxPart{pp in ProductParts};
+param Parts{pp in ProductParts, p in Products};
+
+var x{Products} >= 0 integer;
+
+s.t. max{pp in ProductParts}: sum{p in Products} Parts[pp, p] * x[p] <= MaxPart[pp];
+
+maximize koltseg: sum{p in Products} Cost[p] * x[p];
+
+end;

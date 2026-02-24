@@ -1,0 +1,20 @@
+set Products;
+set Machines;
+set Works;
+
+param Cost{p in Products};
+param Max{m in Machines};
+param Hours{w in Works};
+
+param ProductMachineHours{m in Machines, p in Products};
+param ProductWorkHours{w in Works, p in Products};
+
+var x{p in Products} >= 0 integer;
+
+s.t. machine{m in Machines}: sum{p in Products} x[p] * ProductMachineHours[m, p] <= Max[m];
+
+s.t. work{w in Works}: sum{p in Products} x[p] * ProductWorkHours[w, p] = Hours[w];
+
+maximize invoice: sum{p in Products} x[p] * Cost[p];
+
+end;

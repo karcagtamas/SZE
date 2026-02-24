@@ -1,0 +1,17 @@
+data;
+set Pizzak := margareta hawaii;
+set Hozzavalok := sajt sonka ananasz;
+
+param PizzaAr := 
+    margareta 600 
+    hawaii 800;
+param Mennyiseg :
+            sajt sonka ananasz :=
+margareta     10     2       0
+hawaii         5     4       3;
+
+param HozzavaloMax := 
+    sajt 550 
+    sonka 150 
+    ananasz 120;
+end;

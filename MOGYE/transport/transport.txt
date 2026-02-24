@@ -1,0 +1,15 @@
+set From;
+set To;
+
+param FromOutput{From};
+param ToInput{To};
+param Cost{To, From};
+
+var x{From, To} >= 0;
+
+s.t. fo{f in From}: sum{t in To} x[f, t] = FromOutput[f];
+s.t. ti{t in To}: sum{f in From} x[f, t] = ToInput[t];
+
+minimize pathcost: sum{f in From, t in To} x[f, t] * Cost[t, f];
+
+end;

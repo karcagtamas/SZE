@@ -1,0 +1,18 @@
+data;
+
+set Products:=t1 t2;
+set Machines:=g1 g2;
+set Works:= szerel;
+
+param Cost:= t1 8 t2 10;
+param Max:= g1 130 g2 200;
+param Hours:= szerel 60;
+
+param ProductMachineHours: t1 t2:=
+        g1 3 4
+        g2 4 6;
+
+param ProductWorkHours: t1 t2:=
+        szerel 1 2;
+
+end;

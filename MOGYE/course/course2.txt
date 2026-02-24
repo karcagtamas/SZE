@@ -1,0 +1,18 @@
+var a binary;
+var b binary;
+var d binary;
+var c binary;
+var e binary;
+var f binary;
+
+s.t. m1: a <= 1;
+s.t. m2: a + b <= 1;
+s.t. m3: b + d <= 1;
+s.t. m4: b + e <= 1;
+s.t. m5: c + e <= 1;
+s.t. m6: e <= 1;
+s.t. m7: c + f <= 1;
+s.t. m8: f <= 1;
+
+maximize darab: a + b + d + c + e + f;
+end;

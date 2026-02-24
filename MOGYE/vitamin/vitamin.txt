@@ -1,0 +1,8 @@
+var alma >= 0;
+var citrom >= 0;
+
+s.t. kaloria: alma * (80 / 100) + citrom * (50 / 100) <= 400;
+s.t. cvit: alma * (100 / 100) + citrom * (300 / 100)  >= 500;
+s.t. vas: alma * (0.5 / 1000 / 100) + citrom * (0.2 / 1000 / 100)  >= 0.0012;
+
+minimize koltseg: alma * (400 / 1000) + citrom * (600 / 1000);

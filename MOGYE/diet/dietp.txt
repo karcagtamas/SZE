@@ -1,0 +1,15 @@
+set Foods;
+set Types;
+
+param Cost{f in Foods};
+param Quantity{t in Types, f in Foods};
+param MaxType{t in Types};
+
+var x{Foods} >= 0;
+
+s.t. type{t in Types}: sum{f in Foods} x[f] * Quantity[t, f] >= MaxType[t];
+
+minimize cost: sum{f in Foods} Cost[f] * x[f];
+
+end;
+

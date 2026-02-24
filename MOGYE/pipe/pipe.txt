@@ -1,0 +1,31 @@
+var ab >= 0;
+var ac >= 0;
+var ad >= 0;
+var bc >= 0;
+var be >= 0;
+var bf >= 0;
+var ce >= 0;
+var df >= 0;
+var ed >= 0;
+
+s.t. abmax: ab <= 4;
+s.t. acmax: ac <= 5;
+s.t. admax: ad <= 3;
+s.t. bcmax: bc <= 2;
+s.t. bemax: be <= 4;
+s.t. bfmax: bf <= 7;
+s.t. cemax: ce <= 6;
+s.t. dfmax: df <= 2;
+s.t. edmax: ed <= 10;
+s.t. pb: ab + 3 = bc + be + bf;
+s.t. pc: ac + bc = ce;
+s.t. pd: ad + ed = df;
+s.t. pe: be + ce - 2 = ed;
+
+maximize ered: bf + df;
+solve;
+
+printf "\nKimegy %d\n", ab + ac + ad;
+printf "\nBemegy %d\n\n", df + bf;
+
+end;

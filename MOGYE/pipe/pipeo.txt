@@ -1,0 +1,55 @@
+Problem:    pipe
+Rows:       14
+Columns:    9
+Non-zeros:  24
+Status:     OPTIMAL
+Objective:  ered = 9 (MAXimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 abmax        NU             4                           4             1 
+     2 acmax        B              2                           5 
+     3 admax        B              2                           3 
+     4 bcmax        B              0                           2 
+     5 bemax        B              0                           4 
+     6 bfmax        B              7                           7 
+     7 cemax        B              2                           6 
+     8 dfmax        NU             2                           2             1 
+     9 edmax        B              0                          10 
+    10 pb           NS            -3            -3             =            -1 
+    11 pc           NS             0            -0             =         < eps
+    12 pd           NS             0            -0             =         < eps
+    13 pe           NS             2             2             =         < eps
+    14 ered         B              9                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 ab           B              4             0               
+     2 ac           B              2             0               
+     3 ad           B              2             0               
+     4 bc           NL             0             0                          -1 
+     5 be           NL             0             0                          -1 
+     6 bf           B              7             0               
+     7 ce           B              2             0               
+     8 df           B              2             0               
+     9 ed           NL             0             0                       < eps
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+00 on column 0
+        max.rel.err = 0.00e+00 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

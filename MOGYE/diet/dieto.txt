@@ -1,0 +1,40 @@
+Problem:    diet
+Rows:       4
+Columns:    4
+Non-zeros:  16
+Status:     OPTIMAL
+Objective:  koltseg = 1800 (MINimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 feherje      B            200           120               
+     2 szenhidrat   NL          2000          2000                         0.9 
+     3 zsir         B            400            50               
+     4 koltseg      B           1800                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 x1           NL             0             0                         410 
+     2 x2           NL             0             0                        1491 
+     3 x3           NL             0             0                         319 
+     4 x4           B             20             0               
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+00 on column 0
+        max.rel.err = 0.00e+00 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

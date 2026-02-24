@@ -1,0 +1,14 @@
+set Pizzak;
+set Hozzavalok;
+
+param PizzaAr{Pizzak};
+param Mennyiseg{Pizzak, Hozzavalok};
+param HozzavaloMax{Hozzavalok};
+
+var x{Pizzak} >= 0;
+
+s.t. hozzavalo{h in Hozzavalok}: sum{p in Pizzak} x[p] * Mennyiseg[p, h] <= HozzavaloMax[h];
+
+maximize ar: sum{p in Pizzak} PizzaAr[p] * x[p];
+
+end;

@@ -1,0 +1,20 @@
+data;
+set From:=Budapest Veszprem Gyor Szekesfehervar;
+set To:=Komarom Szeged Debrecen;
+
+param FromOutput:= 
+    Budapest 1000 
+    Veszprem 500 
+    Gyor 600 
+    Szekesfehervar 400;
+
+param ToInput:=
+    Komarom 1100
+    Szeged 700
+    Debrecen 700;
+
+param Cost: Budapest Veszprem Gyor Szekesfehervar :=
+    Komarom 12 5 2 3
+    Szeged 5 4 10 6
+    Debrecen 5 3 12 7;
+

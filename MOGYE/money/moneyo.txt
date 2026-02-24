@@ -1,0 +1,30 @@
+Problem:    money
+Rows:       2
+Columns:    4 (4 integer, 0 binary)
+Non-zeros:  8
+Status:     INTEGER OPTIMAL
+Objective:  darab = 17 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 osszeg                   6273          6273             = 
+     2 darab                      17                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 x1           *             12             0               
+     2 x2           *              1             0               
+     3 x3           *              1             0               
+     4 x4           *              3             0               
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

@@ -1,0 +1,27 @@
+var x12 >= 0 binary;
+var x13 >= 0 binary;
+var x14 >= 0 binary;
+var x24 >= 0 binary;
+var x26 >= 0 binary;
+var x27 >= 0 binary;
+var x35 >= 0 binary;
+var x45 >= 0 binary;
+var x58 >= 0 binary;
+var x65 >= 0 binary;
+var x68 >= 0 binary;
+var x76 >= 0 binary;
+var x79 >= 0 binary;
+var x89 >= 0 binary;
+
+s.t. kezdet: x12 + x13 + x14 = 1;
+s.t. x2: x12 = x27 + x26 + x24;
+s.t. x3: x13 = x35;
+s.t. x4: x14 + x24 = x45;
+s.t. x5: x35 + x45 + x65 = x58;
+s.t. x6: x26 + x76 = x65 + x68;
+s.t. x7: x27 = x76 + x79;
+s.t. x8: x58 + x68 = x89;
+# s.t. veg: x79 + x89 = 1;
+
+minimize utkoltseg: 2 * x12 + 1 * x13 + 2 * x14 + 4 * x24 + 2 * x26 + 1 * x27 + 3 * x35 + 2 * x45 + 2 * x58 + 3 * x65 + 1 * x68 + 2 * x76 + 4 * x79 + 6 * x89;
+end;

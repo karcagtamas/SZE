@@ -1,0 +1,8 @@
+var tabletta1 >= 0;
+var tabletta2 >= 0;
+
+s.t. tudas: tabletta1 * 10 + tabletta2 * 7 >= 51;
+s.t. tuladag: tabletta1 + tabletta2 <= 8;
+s.t. eper: tabletta1 <= tabletta2;
+
+minimize koltseg: tabletta1 * 2000 + tabletta2 * 1500;

@@ -1,0 +1,8 @@
+var ing >= 0 integer;
+var szoknya >= 0 integer;
+
+s.t. darab: ing + szoknya >= 4;
+s.t. anyag: 3 * ing + 4 * szoknya <= 12;
+s.t. munkaido: 5 * ing + 2 * szoknya <= 10;
+
+maximize profit: 4 * ing + 3 * szoknya;

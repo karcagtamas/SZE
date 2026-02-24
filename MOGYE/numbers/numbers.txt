@@ -1,0 +1,11 @@
+var a >= 0;
+var b >= 0;
+var c >= 0;
+
+s.t. f1: a + b + c <= 100;
+s.t. f2: 2 * a + b = 30;
+s.t. f3: c * 2 + b >= 50;
+
+maximize num: a * 3 + b * 5 + c * 6;
+
+end;

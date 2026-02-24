@@ -1,0 +1,19 @@
+var a1 binary;
+var a2 binary;
+var a3 binary;
+var b1 binary;
+var b2 binary;
+var b3 binary;
+var c1 binary;
+var c2 binary;
+var c3 binary;
+
+s.t. ar: a1 + a2 + a3 = 1;
+s.t. br: b1 + b2 + b3 = 1;
+s.t. cr: c1 + c2 + c3 = 1;
+s.t. r1: a1 + b1 + c1 = 1;
+s.t. r2: a2 + b2 + c2 = 1;
+s.t. r3: a3 + b3 + c3 = 1;
+
+minimize koltseg: 2 * a1 + 4 * a2 + 3 * a3 + 10 * b1 + 5 * b2 + 6 * b3 + 4 * c1 + 2 * c2 + 1 * c3;
+end;

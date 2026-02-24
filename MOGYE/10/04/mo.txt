@@ -1,0 +1,38 @@
+Problem:    m
+Rows:       4
+Columns:    2
+Non-zeros:  8
+Status:     OPTIMAL
+Objective:  koltseg = 10500 (MINimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 tudas        NL            51            51                     205.882 
+     2 tuladag      B              6                           8 
+     3 eper         NU             0                          -0      -58.8235 
+     4 koltseg      B          10500                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 tabletta1    B              3             0               
+     2 tabletta2    B              3             0               
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+00 on column 0
+        max.rel.err = 0.00e+00 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

@@ -1,0 +1,44 @@
+Problem:    magic
+Rows:       6
+Columns:    6
+Non-zeros:  12
+Status:     OPTIMAL
+Objective:  0 (MINimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 r1           NS           303           303             =         < eps
+     2 r2           NS           368           368             =         < eps
+     3 r3           NS           438           438             =         < eps
+     4 c1           NS           303           303             =         < eps
+     5 c2           NS           438           438             =         < eps
+     6 c3           B            368           368             = 
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 x12          B             70             0               
+     2 x13          B            233             0               
+     3 x21          NL             0             0                       < eps
+     4 x22          B            368             0               
+     5 x31          B            303             0               
+     6 x33          B            135             0               
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+00 on column 0
+        max.rel.err = 0.00e+00 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

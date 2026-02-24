@@ -1,0 +1,38 @@
+Problem:    vitamin
+Rows:       4
+Columns:    2
+Non-zeros:  8
+Status:     OPTIMAL
+Objective:  koltseg = 140 (MINimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 kaloria      B            210                         400 
+     2 cvit         NL           500           500                    0.169231 
+     3 vas          NL        0.0012        0.0012                     46153.8 
+     4 koltseg      B            140                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 alma         B            200             0               
+     2 citrom       B            100             0               
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 5.68e-14 on row 2
+        max.rel.err = 5.68e-17 on row 2
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+00 on column 0
+        max.rel.err = 0.00e+00 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

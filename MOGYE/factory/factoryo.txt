@@ -1,0 +1,30 @@
+Problem:    factory
+Rows:       4
+Columns:    2 (2 integer, 0 binary)
+Non-zeros:  8
+Status:     INTEGER OPTIMAL
+Objective:  koltseg = 2070 (MAXimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 szerel                    190                         220 
+     2 gep1                      240                         240 
+     3 gep2                      630                         630 
+     4 koltseg                  2070                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 t1           *             50             0               
+     2 t2           *             90             0               
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

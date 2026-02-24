@@ -1,0 +1,16 @@
+data;
+
+set Products:=lekvar befott;
+set ProductParts:=gyumi cukor;
+
+param Cost:= 
+    lekvar 100 
+    befott 80;
+param MaxPart:= 
+    gyumi 120 
+    cukor 80;
+param Parts: lekvar befott:=
+    gyumi 0.8 0.4
+    cukor 0.4 0.4;
+
+end;
